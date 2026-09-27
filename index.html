@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>A Little Message For You 🎀</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Put your own audio file next to index.html and name it song.mp3 if you want background music -->
+<audio id="bgSong" src="song.mp3" loop preload="auto"></audio>
+<button class="sound-toggle" id="soundToggle" type="button" aria-label="Play or mute the song">🔈</button>
+
+<!-- Soft floating background decoration -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="cloud cloud-a"></div>
+  <div class="cloud cloud-b"></div>
+  <div class="cloud cloud-c"></div>
+
+  <div class="sparkle s1">✦</div>
+  <div class="sparkle s2">✦</div>
+  <div class="sparkle s3">✧</div>
+  <div class="sparkle s4">✦</div>
+  <div class="sparkle s5">✧</div>
+
+  <div class="bow bow-drift bow-1">🎀</div>
+  <div class="bow bow-drift bow-2">🎀</div>
+  <div class="bow bow-drift bow-3">🎀</div>
+
+  <div class="kitty float-slow corner-kitty" id="kittyCorner"></div>
+  <div class="kitty float-med drift-kitty" id="kittyDrift1"></div>
+  <div class="kitty float-slow drift-kitty" id="kittyDrift2"></div>
+</div>
+
+<!-- SCREEN 1 : COVER -->
+<main class="screen" id="cover">
+  <section class="card" id="coverCard">
+
+    <div class="kitty kitty-top" id="kittyTop1" aria-hidden="true"></div>
+
+    <p class="eyebrow">A LITTLE MESSAGE FOR YOU</p>
+
+    <h1 class="big-name">CIA</h1>
+
+    <p class="msg-line">Something sweet, just for you... 🎀</p>
+
+    <button class="kitty-btn" id="openBtn" type="button">
+      <span class="btn-bow">🎀</span> OPEN IT, CIA
+    </button>
+
+    <div class="mini-kitty mini-kitty-a" aria-hidden="true">🎀</div>
+    <div class="mini-kitty mini-kitty-b" aria-hidden="true">🌸</div>
+  </section>
+</main>
+
+<!-- SCREEN 2 : THE LETTER -->
+<main class="screen hidden" id="message">
+  <section class="card" id="messageCard">
+
+    <div class="kitty kitty-top" id="kittyTop2" aria-hidden="true"></div>
+
+    <p class="eyebrow">TO MY CIA</p>
+
+    <h2 class="name-script">Cia ♡</h2>
+
+    <div class="divider"></div>
+
+    <div class="letter" id="letter">
+      <p class="reveal">Cia,</p>
+      <p class="reveal">Sometimes I try to find the right words to explain what you mean to me, but somehow every word feels too small.</p>
+      <p class="reveal">I love having you in my life. I love the way your name alone can make me smile, and how even the smallest things about you can stay in my mind for hours.</p>
+      <p class="reveal">I love your little details, your laugh, the way you talk, and all those simple things you probably don't even realize are special. Somehow, they became some of my favorite things.</p>
+      <p class="reveal">Being close to you made me realize that someone can slowly become such a beautiful part of your everyday life that you can't imagine your days without them.</p>
+      <p class="reveal">And if you ever ask me what I love most about you, I honestly don't think I could choose just one thing.</p>
+      <p class="reveal">Maybe it's everything.<br>Your personality, your smile, your little habits, your presence, and the way you make ordinary moments feel different. 🎀</p>
+      <p class="reveal">I don't want to make huge promises with complicated words. I just want you to know that you are genuinely precious to me, more than I can properly explain.</p>
+      <p class="reveal">And whenever you read this, I hope you smile for a moment and remember that somewhere, someone thinks you're incredibly special.</p>
+      <p class="reveal signature">Cia, I like you more than these words could ever explain. 🎀🤍</p>
+    </div>
+
+    <div class="kitty kitty-bottom" id="kittyBottom" aria-hidden="true"></div>
+
+    <div class="mini-kitty mini-kitty-c" aria-hidden="true">🎀</div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
